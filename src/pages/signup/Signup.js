@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as yup from 'yup';
 import './Signup.css';
-
+import logo from '../../images/signup-logo.png';
 
 const SignupSchema = yup.object().shape({
     email: yup.string().email('Invalid Email!').required('Required!'),
@@ -16,7 +16,7 @@ function SignupPage() {
     return (
             <div className='signup'>
                 <section className="logo">
-                    <img src="./logosignup.png" alt='img'></img>
+                    <img src={logo} alt='img'></img>
                 </section>
                 <section className="form">
                     <h1 className='title'>REGISTER</h1>

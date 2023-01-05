@@ -2,7 +2,8 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as yup from 'yup';
 import './Login.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import logo from '../../images/login-logo.jpg';
 
 
 const LoginSchema = yup.object().shape({
@@ -15,7 +16,7 @@ function LoginPage() {
     return (
             <div className='login'>
                 <section className="logo">
-                    <img src="./login-logo.jpg" alt='imagen'></img>
+                    <img src={logo} alt='imagen'></img>
                 </section>
                 <section className="form">
                     <h1 className='title'>LOGIN</h1>

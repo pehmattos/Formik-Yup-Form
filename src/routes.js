@@ -1,9 +1,9 @@
 import React from "react";
-import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import { createHashRouter, createRoutesFromElements, Route } from 'react-router-dom';
 import LoginPage from "./pages/login/Login";
 import SignupPage from "./pages/signup/Signup";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={<LoginPage />}></Route>
