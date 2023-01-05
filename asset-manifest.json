@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/form-formik-yup/static/css/main.53eeb696.css",
-    "main.js": "/form-formik-yup/static/js/main.e444dcfb.js",
+    "main.js": "/form-formik-yup/static/js/main.f82398a0.js",
+    "static/media/signup-logo.png": "/form-formik-yup/static/media/signup-logo.d5e9296bf7cf9b0e40fd.png",
     "index.html": "/form-formik-yup/index.html",
     "main.53eeb696.css.map": "/form-formik-yup/static/css/main.53eeb696.css.map",
-    "main.e444dcfb.js.map": "/form-formik-yup/static/js/main.e444dcfb.js.map"
+    "main.f82398a0.js.map": "/form-formik-yup/static/js/main.f82398a0.js.map"
   },
   "entrypoints": [
     "static/css/main.53eeb696.css",
-    "static/js/main.e444dcfb.js"
+    "static/js/main.f82398a0.js"
   ]
 }
