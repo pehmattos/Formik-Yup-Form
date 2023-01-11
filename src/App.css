@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Root Config */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: inherit;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(61, 61, 214, 0.863);
+}
+
+/* Form Config */
+
+.login {
+  margin: 0 auto;
+  width: 20rem;
+  border: 1px solid gray;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.973);
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 2rem;
+}
+
+.signup {
+  margin: 0 auto;
+  width: 18rem;
+  height: 33rem;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid black;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+}
+.form-control {
+  display: flex;
+  flex-flow: nowrap column;
+}
+
+.hide {
+  position: absolute;
+  right: 156px;
+  top: 60px;
+}
+
+.show {
+  position: absolute;
+  right: 156px;
+  top: 60px;
+}
+
+.divider {
+  margin: 15px 0;
+}
+
+/* User Config */
+
+.user-password {
+  margin-bottom: .5rem;
+}
+.user-email {
+  margin-bottom: 1.5rem;
+}
+#user-firstname {
+  height: 3rem;
+}
+#user-lastname {
+  height: 3rem;
+}
+#password {
+  width: 100%;
+  border: 1px rgba(165, 160, 160, 0.301) solid;
+  border-radius: 3px;
+  height: 30px;
+}
+#email {
+  width: 100%;
+  border: 1px rgba(165, 160, 160, 0.301) solid;
+  border-radius: 3px;
+  height: 30px;
+}
+#firstname {
+  width: 100%;
+}
+#lastname {
+  width: 100%;
+}
+#remember  {
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+
+/* Redirection */
+
+.forgot {
+  align-self: flex-end;
+  margin: 7px 0;
+  text-decoration: none;
+}
+.button {
+  width: 100%;
+  height: 2rem;
+  align-self: center;
+  margin-top: 2rem;
+  border-radius: 5px;
+  background-color: rgb(236, 60, 60);
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 1px 5px 0px gray;
+  cursor: pointer;
+}
+.register {
+  text-decoration: none;
+}
+.social-login {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  margin: 10px 0;
+}
+.icon {
+  margin: 0 7px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.account {
+  margin: 15px 0;
+}
+
+
+/* Error Config */
+
+#erro {
+  color: red;
+  font-size: .7rem;
+  margin-top: 5px;
+}
