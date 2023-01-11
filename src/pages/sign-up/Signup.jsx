@@ -3,12 +3,15 @@ import { Formik, Form, Field } from 'formik';
 import * as yup from 'yup';
 import '../../App.css';
 import { BiShow, BiHide } from 'react-icons/bi';
+import { Divider } from '@mui/material';
+import { FaGooglePlusSquare, FaFacebookSquare, FaLinkedin } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 const SignupSchema = yup.object().shape({
-    email: yup.string().email('Invalid Email!').required('Required!'),
-    password: yup.string().required('Required!').min(8, 'eight min'),
-    firstname: yup.string().required('Required!').max(8, 'eight max'),
-    lastname: yup.string().required('Required!').max(8, 'eight max')
+    email: yup.string().email('Please enter a valid email address').required('Email is required'),
+    password: yup.string().required('Password is required').min(8, 'Most be 8 or more characteres and contain at least 1 number and 1 special character.'),
+    firstname: yup.string().required('FirstName is required!').max(8, '8 is the maximum number of letters allowed'),
+    lastname: yup.string().required('LastName is required!').max(8, '8 is the maximum number of letters allowed')
 })
 
 function SignupPage() {
@@ -26,36 +29,53 @@ function SignupPage() {
                     {({ errors, touched }) =>
                         <Form className="form-control">
 
-                            <div id='user-firstname'>
-                                <label htmlFor='firstname'><p>First Name</p>
-                                    <Field id="firstname" name="firstname" type="text" /></label>
+                            <div className='user-firstname'>
+                                <label htmlFor='firstname'>First Name</label>
+                                    <Field id="firstname" name="firstname" type="text" />
+
                                 {errors.firstname && touched.firstname ? <span id="erro">{errors.firstname}</span> : null}
+
                             </div>
 
-                            <div id='user-lastname'>
-                                <label htmlFor='lastname'><p>Last Name</p>
-                                    <Field id="lastname" name="lastname" type="text" /></label>
+                            <div className='user-lastname'>
+                                <label htmlFor='lastname'>Last Name</label>
+                                    <Field id="lastname" name="lastname" type="text" />
+
                                 {errors.lastname && touched.lastname ? <span id="erro">{errors.lastname}</span> : null}
+
                             </div>
 
-                            <div id='user-email'>
-                                <label htmlFor='email'><p>Email</p>
-                                    <Field id="email" name="email" type="email" /></label>
+                            <div className='user-email'>
+                                <label htmlFor='email'>Email</label>
+                                    <Field id="email" name="email" type="email" />
+
                                 {errors.email && touched.email ? <span id="erro">{errors.email}</span> : null}
                             </div>
 
-                            <div id='user-password'>
-                                <label htmlFor='password'><p>Password</p></label>
+                            <div className='user-password'>
+                                <label htmlFor='password'>Password</label>
                                 <Field id="password" name="password" type={visible ? "text" : "password"} />
                                 
                                 {visible ? (<BiShow onClick={Switch} className="show"/>) : (<BiHide onClick={Switch} className="hide" />)}
-                                <BiShow />
 
                                 {errors.password && touched.password ? <span id="erro">{errors.password}</span> : null}
                             </div>
 
-                            <a className='forgot' href='forgot'>Forgot password?</a>
                             <button className='button' type='submit'>Create Account</button>
+
+                            <div className="divider">
+                                <Divider>OR</Divider>
+                            </div>
+
+                            <div className="social-login">
+                                <FaGooglePlusSquare className='icon' onClick={() => alert('Login with Google')} color='rgb(219, 42, 42)' />
+                                <FaFacebookSquare className='icon' onClick={() => alert('Login with Facebook')} color='rgb(50, 50, 204)' />
+                                <FaLinkedin className='icon' onClick={() => alert('Login with LinkedIn')} color='rgb(84, 84, 226)' />
+                            </div>
+
+                            <div className='account'>
+                                Already a user?<Link to="/" className='register' > LOGIN</Link>
+                            </div>
                         </Form>
                     }
                 </Formik>

@@ -8,7 +8,7 @@ import { FaGooglePlusSquare, FaFacebookSquare, FaLinkedin } from 'react-icons/fa
 
 
 const LoginSchema = yup.object().shape({
-    email: yup.string().email('Enter a valid email').required('Email is required'),
+    email: yup.string().email('Please enter a valid email address').required('Email is required'),
     password: yup.string().required('Password is required').min(8, 'Most be 8 or more characteres and contain at least 1 number and 1 special character.')
 })
 
@@ -29,12 +29,14 @@ function LoginPage() {
                             <div className='user-email'>
                                 <label htmlFor='email'>Email</label>
                                 <Field id="email" name="email" type="email" />
+
                                 {errors.email && touched.email ? <p id="erro">{errors.email}</p> : null}
                             </div>
 
                             <div className='user-password'>
                                 <label htmlFor='password'>Password</label>
                                 <Field id="password" name="password" type="password" />
+
                                 {errors.password && touched.password ? <p id="erro">{errors.password}</p> : null}
                             </div>
 

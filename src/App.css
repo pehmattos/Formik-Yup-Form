@@ -14,7 +14,7 @@ body {
 }
 
 #root {
-  height: inherit;
+  height: 120%;
   padding-top: 20px;
   font-family: "Roboto", sans-serif;
   background-color: rgba(61, 61, 214, 0.863);
@@ -25,7 +25,6 @@ body {
 .login {
   margin: 0 auto;
   width: 20rem;
-  border: 1px solid gray;
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.973);
   box-shadow: 1px 1px 1px 1px gray;
@@ -34,11 +33,11 @@ body {
 
 .signup {
   margin: 0 auto;
-  width: 18rem;
-  height: 33rem;
-  display: flex;
-  flex-flow: column nowrap;
-  border: 1px solid black;
+  width: 20rem;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.973);
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 2rem;
 }
 
 .title {
@@ -51,6 +50,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .form-control {
   display: flex;
   flex-flow: nowrap column;
@@ -58,33 +58,39 @@ body {
 
 .hide {
   position: absolute;
-  right: 156px;
-  top: 60px;
+  right: 230px;
+  bottom: 272px;
+  font-size: 20px;
+  color: gray;
 }
 
 .show {
   position: absolute;
-  right: 156px;
-  top: 60px;
+  right: 230px;
+  bottom: 272px;
+  font-size: 20px;
+  color: gray;
 }
 
 .divider {
-  margin: 15px 0;
+  margin: 1rem 0;
 }
 
 /* User Config */
 
 .user-password {
-  margin-bottom: .5rem;
-}
-.user-email {
   margin-bottom: 1.5rem;
 }
-#user-firstname {
-  height: 3rem;
+.user-email {
+  height: 5rem;
 }
-#user-lastname {
+.user-firstname {
   height: 3rem;
+  margin-bottom: 1.5rem;
+}
+.user-lastname {
+  height: 3rem;
+  margin-bottom: 1.5rem;
 }
 #password {
   width: 100%;
@@ -100,15 +106,20 @@ body {
 }
 #firstname {
   width: 100%;
+  border: 1px rgba(165, 160, 160, 0.301) solid;
+  border-radius: 3px;
+  height: 30px;
 }
 #lastname {
   width: 100%;
+  border: 1px rgba(165, 160, 160, 0.301) solid;
+  border-radius: 3px;
+  height: 30px;
 }
 #remember  {
   vertical-align: text-top;
   margin-right: 5px;
 }
-
 
 /* Redirection */
 
@@ -121,7 +132,7 @@ body {
   width: 100%;
   height: 2rem;
   align-self: center;
-  margin-top: 2rem;
+  margin: 1.5rem 0;
   border-radius: 5px;
   background-color: rgb(236, 60, 60);
   color: white;
