@@ -12,7 +12,7 @@
 Clone the repository or download it:
 
 ```bash
-  git clone https://github.com/pehmattos/Formik-Yup-Form/tree/gh-pages
+  git clone https://github.com/pehmattos/Formik-Yup-Form.git
 
   cd Formik-Yup-Form
 ```
@@ -22,6 +22,13 @@ After that you can install the dependencies by executing the following command i
 ```bash
 npm install
 
+```
+
+Now with all dependencies installed you can run the app
+	
+```bash 
+	npm start
+  
 ```
 
 ## License
