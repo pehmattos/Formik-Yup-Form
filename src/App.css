@@ -22,18 +22,7 @@ body {
 
 /* Form Config */
 
-.login {
-  margin: 0 auto;
-  width: 20rem;
-  border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.973);
-  box-shadow: 1px 1px 1px 1px gray;
-  padding: 2rem;
-  max-width: 96%;
-  max-height: 100%;
-}
-
-.signup {
+.login, .singup {
   margin: 0 auto;
   width: 20rem;
   border-radius: 7px;
@@ -60,16 +49,7 @@ body {
   flex-flow: nowrap column;
 }
 
-.hide {
-  position: relative;
-  bottom: 25px;
-  font-size: 20px;
-  color: gray;
-  left: 230px;
-  z-index: 1;
-}
-
-.show {
+.hide, .show {
   position: relative;
   bottom: 25px;
   font-size: 20px;
@@ -90,33 +70,11 @@ body {
 .user-email {
   height: 5rem;
 }
-.user-firstname {
+.user-firstname, .user-lastname {
   height: 3rem;
   margin-bottom: 1.5rem;
 }
-.user-lastname {
-  height: 3rem;
-  margin-bottom: 1.5rem;
-}
-#password {
-  width: 100%;
-  border: 1px rgba(165, 160, 160, 0.301) solid;
-  border-radius: 3px;
-  height: 30px;
-}
-#email {
-  width: 100%;
-  border: 1px rgba(165, 160, 160, 0.301) solid;
-  border-radius: 3px;
-  height: 30px;
-}
-#firstname {
-  width: 100%;
-  border: 1px rgba(165, 160, 160, 0.301) solid;
-  border-radius: 3px;
-  height: 30px;
-}
-#lastname {
+#password, #email, #firstname, #lastname {
   width: 100%;
   border: 1px rgba(165, 160, 160, 0.301) solid;
   border-radius: 3px;
