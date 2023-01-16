@@ -1,19 +1,18 @@
 <div align="center">
-  <h1>Form With Authentication</h1>
+  <h1>Form with Validation</h1>
 </div><br>
 
 <p align="center" style="float: left;">
-  <img src="https://user-images.githubusercontent.com/81716711/212397419-876ff370-41fe-4035-b8ab-02710d976e41.png" width="350">
-  <img src="https://user-images.githubusercontent.com/81716711/212397427-2f4f021f-3d91-48b4-bff8-2ab2cb7268fe.png" width="350">
+ <img width="750" src="https://user-images.githubusercontent.com/81716711/212733426-907eef8c-e601-4796-b39a-a635cb7241a0.png"/>
 </p>
 
-Obs. No backend here or any api integration.
+<i>Obs:. No backend here or any api integration.</i> 
 
 ## Functionalities
 
-- Authentication in all fields
-- Hide/show password
-- Routing 
+- Fields With Validation
+- Show/Hide Password Button
+- Routing System
 
 ## Installation
 
@@ -40,3 +39,4 @@ npm start
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
