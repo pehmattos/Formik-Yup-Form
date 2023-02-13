@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "../pages/log-in/Login.jsx" },
+    { "source": "/signup", "destination": "../pages/sign-up/Signup.jsx" }
+  ]
+}
